@@ -1,25 +1,25 @@
-# README
+Projeto criado por 💜 Julia
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Um validador de CPF brasileiro feito em Ruby on Rails!
 
-Things you may want to cover:
+🚀 Como Usar
 
-* Ruby version
+Instalar as Dependências
 
-* System dependencies
+No terminal, dentro da pasta do projeto: 
 
-* Configuration
+3. Instale as Dependências No terminal, dentro da pasta do projeto: bundle install
 
-* Database creation
+4. Prepare o Banco de Dados rails db:create db:migrate
 
-* Database initialization
+5. Execute o Servidor rails server
 
-* How to run the test suite
+Acesse: http://localhost:3000
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
-# Validador de CPF em Rails
+✨ Funcionalidades ✔ Validação real de CPF (não só formato) 
+
+
+Feito com: Ruby 3.X Rails 7.X
+Dúvidas? Abra um problema aqui no GitHub!
