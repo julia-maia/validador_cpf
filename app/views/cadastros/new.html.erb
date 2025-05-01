@@ -1,0 +1,32 @@
+<div class="cpf-validator-container">
+<body>
+  <h1 class="mb-4">Validador de CPF</h1>
+  
+  <%= form_with(model: @cadastro, local: true, data: { turbo: false }) do |form| %>
+    <% if @cadastro.errors.any? %>
+      <div class="alert alert-danger">
+        <h2>Erros encontrados:</h2>
+        <ul>
+          <% @cadastro.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="form-group mb-3">
+      <%= form.label :nome, class: "form-label" %>
+      <%= form.text_field :nome, class: "form-control", placeholder: "EX: JULIA" %>
+    </div>
+
+    <div class="form-group mb-3">
+      <%= form.label :cpf, "CPF", class: "form-label" %>
+      <%= form.text_field :cpf, class: "form-control", placeholder: "CPF" %>
+      <br> <br>
+      <small class="text-muted">Digite apenas números e siga o formato XXX.XXX.XXX-XX</small>
+    </div>
+<br>
+    <%= form.submit "Validar CPF", class: "btn btn-primary w-100" %>
+  <% end %>
+  </body>
+</div>
